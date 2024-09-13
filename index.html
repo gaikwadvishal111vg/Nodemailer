@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Send Email Using NodeMailer(Package)</title>
+  </head>
+  <style>
+    /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } */
+    body {
+      background-color: #222;
+      color: #fff;
+    }
+    .email {
+      border: 2px solid red;
+      width: 100%;
+      height: 1024px;
+      margin: 20px 20px;
+    }
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+    .input-box {
+      width: 300px;
+      min-height: 40px;
+      border-radius: 10px;
+      /* margin-bottom: 10px; */
+    }
+    .subject {
+      width: 400px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      min-height: 50px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      overflow-y: auto;
+    }
+    .message {
+      width: 900px;
+      height: 120px;
+      border-radius: 20px;
+      padding: 10px 10px;
+    }
+    .send {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: rgb(37, 10, 189);
+      color: #fff;
+      font-size: 25px;
+      margin-top: 30px;
+    }
+    .send:hover {
+      background-color: aqua;
+      color: #222;
+    }
+    .message-area {
+      display: flex;
+      gap: 20px;
+      height: 150px;
+    }
+    .email-div img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <body>
+    <section class="email" id="email">
+      <div class="email-div">
+        <div>
+          <h1>Email</h1>
+          <!-- <img src="cartoonface.jpg" alt="" /> -->
+        </div>
+        <form action="/" method="POST">
+          <div class="email-form">
+            <p>Form :</p>
+            <input
+              type="email"
+              class="input-box"
+              required
+              placeholder="Email"
+              name="nameofperson"
+            />
+            <p>To :</p>
+            <input
+              type="email"
+              class="input-box"
+              required
+              placeholder="Email"
+              name="username"
+            />
+            <p>Cc :</p>
+            <input type="email" class="input-box" placeholder="Email" />
+            <p>Bcc :</p>
+            <input type="email" class="input-box" placeholder="Email" />
+            <span>Subject</span>
+            <input
+              type="text"
+              class="subject"
+              placeholder="Write Subject Here..."
+            />
+            <div class="message-area">
+              <textarea
+                class="message"
+                rows="4"
+                cols="50"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <button class="send">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
